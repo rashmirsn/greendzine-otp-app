@@ -1,0 +1,59 @@
+/* OTP Page Styling with Blue Background */
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #007bff;  /* Blue background */
+  background-size: cover;
+}
+
+.otp-form {
+  background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.otp-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.otp-input-group {
+  margin-bottom: 20px;
+}
+
+.otp-input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.otp-input-group input:focus {
+  border-color: #007bff;
+}
+
+.otp-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.otp-btn:hover {
+  background-color: #218838;
+}

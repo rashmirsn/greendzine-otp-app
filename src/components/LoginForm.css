@@ -1,0 +1,67 @@
+/* Page Wrapper */
+.page-wrapper {
+  display: flex;
+  justify-content: space-between; /* Create side-by-side layout */
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;  /* Space between the two boxes */
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Dark and light blue gradient */
+}
+
+/* Left Box: Login Form */
+.left-box {
+  flex: 1;  /* Takes up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  background: #f7f7f7;  /* Background for the left box */
+  border: 1px solid #ddd; /* Border for the left box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Right Box: Text */
+.right-box {
+  flex: 1;  /* Takes up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f7f7f7;  /* Background for the right box */
+  border-radius: 10px;
+  border: 1px solid #ddd; /* Border for the right box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Text Style for Web Application */
+.app-description {
+  font-weight: bold;
+  font-size: 28px;
+  color: #000000; /* Dark Black color for the text */
+  text-align: center;
+  width: 100%;  /* Ensure the text takes full width */
+}
+
+/* Adjustments for the Page */
+.page-wrapper .left-box,
+.page-wrapper .right-box {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .page-wrapper {
+    flex-direction: column; /* Stack boxes vertically on mobile */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-box, .right-box {
+    width: 90%; /* Make the boxes take up most of the screen on mobile */
+    margin-bottom: 20px; /* Space between the stacked boxes */
+  }
+}
